@@ -25,6 +25,7 @@ def get_db_connection():
 @app.route("/")
 def home():
     return render_template("login.html")
+    return "Hello, Elastic Beanstalk!"
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -80,5 +81,6 @@ def register():
     return render_template("register.html")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Default to port 5000 if PORT is not set
+    app.run(host="0.0.0.0", port=port)
 
