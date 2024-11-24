@@ -6,7 +6,7 @@ from db_config import db_config  # Import the database configuration
 app = Flask(__name__)
 app.secret_key = "your_secret_key"  # Replace with a secure key for session management
 
-# Function to establish a database connection
+# Function to establish a database connection hello vinay
 def get_db_connection():
     try:
         connection = mysql.connector.connect(
