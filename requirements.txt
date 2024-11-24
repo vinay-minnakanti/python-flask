@@ -1,4 +1,5 @@
-flask=1.1.2
-mysql-connector-python
-boto3
+Flask==1.1.2
+Flask-WTF==0.14.3
+mysql-connector-python==1.0.12
+boto3==1.17.54
 
